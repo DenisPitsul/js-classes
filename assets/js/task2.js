@@ -1,17 +1,8 @@
 // use export for task 1
 class RangeValidator {
     constructor(from, to) {
-        if(typeof from !== 'number') {
-            throw TypeError("'from' value must be number")
-        }
-        if(typeof to !== 'number') {
-            throw TypeError("'to' value must be number")
-        }
-        if (from > to) {
-            throw RangeError(`'from' - '${from}' value must be more or equal to 'to' - ${to}`)
-        }
-        this._from = from;
-        this._to = to;
+        this.from = from;
+        this.to = to;
     }
 
     set from(value) {
