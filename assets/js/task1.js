@@ -19,7 +19,7 @@ class Post {
     }
 
     likeDec() {
-        if(likesCount > 0) {
+        if(this._likesCount > 0) {
             this._likesCount--;
         }
     }
